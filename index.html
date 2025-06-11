@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CO2 Footprint</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div id="nav-header">
+                    <img src="./images/fingerprint.svg" alt="Fingerabdruck" height="35"/>
+                    <h1>CO2-Fußabdruck</h1>
+                    <button id="mobile-menu-button" class="mobile-only">☰</button>
+                    <div id="nav-links">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="menu">
+                <h3>Menü</h3>
+                <ul class="menu-links">
+                    <li><a href="#search-button">Suche</a></li>
+                    <li><a href="#footer">Ende</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="searchbar">
+                    <input type="text" id="search-input" placeholder="Suche nach Daten" />
+                    <button id="search-button"></button>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead id="sortable">
+                            <tr>
+                                <th id="land" >Land <span class="sort-icon"></span></th>
+                                <th id="unternehmen">Unternehmen <span class="sort-icon"></span></th>
+                                <th id="emmission">Emmisionen in Millionen Tonnen <span class="sort-icon"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tContent">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="footer">
+                <p>© 2025 Jana Selina Suntinger</p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
